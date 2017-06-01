@@ -1,0 +1,18 @@
+body {
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sidebar {
+    width: 30%;
+    background-color: '#044f62';
+}
+
+.main-area {
+    width: 70%
+}
