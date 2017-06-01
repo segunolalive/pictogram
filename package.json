@@ -18,5 +18,5 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://github.io/segunolalive/pictogram"
+  "homepage": " https://segunolalive.github.io/pictogram/"
 }
