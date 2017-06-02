@@ -12,6 +12,7 @@ function Setting (props) {
       <div className='range-field'>
         <input
           type='range'
+          step={0.1}
           name={props.name}
           value={props.value}
           min={props.min}
