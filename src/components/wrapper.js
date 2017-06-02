@@ -58,12 +58,17 @@ class Wrapper extends Component {
             filters={this.state.filters}
             onChange={this.handleSettingsChange}
           />
-          <CanvasContainer className='main-area drop-target'
-            href={this.state.dataUri}
-            download={this.state.filename}
-            onChange={this.uploadImage}
-            filters={this.state.filters}
-          />
+          <div>
+            <div>
+              <h3>Upload your Photo. Adjust filters as desired. And Save. Enjoy!</h3>
+            </div>
+            <CanvasContainer className='main-area drop-target'
+              href={this.state.dataUri}
+              download={this.state.filename}
+              onChange={this.uploadImage}
+              filters={this.state.filters}
+            />
+          </div>
         </div>
       </div>
     )

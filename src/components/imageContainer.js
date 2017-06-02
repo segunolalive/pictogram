@@ -7,7 +7,7 @@ class ImageCanvas extends Component {
       <div>
         <canvas
           height={400}
-          width={600}
+          width={400}
           id='canvas'
           style={this.props.style}
           filters={this.props.filters}

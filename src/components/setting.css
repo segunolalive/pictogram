@@ -24,7 +24,7 @@ input {
 }
 
 .label-right {
-    /*text-align: right;*/
+    text-align: right;
 }
 
 .range-field {

@@ -4,6 +4,7 @@ import './header.css';
 class Header extends Component {
   render () {
     const style = {
+      width: '100%',
       textAlign: 'center',
       color: '#ffffff',
       backgroundColor: '#044f62',
