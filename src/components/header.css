@@ -17,4 +17,7 @@
         position: static;
         padding: 0;
     }
+    .header h1 {
+        margin: 0;
+    }
 }
