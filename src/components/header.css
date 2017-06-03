@@ -1,0 +1,19 @@
+.header {
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: #044f62;
+    position: fixed;
+    top: 0px;
+    margin: 0px 0px 1px;
+    padding: 5px;
+    letter-spacing: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 3px 5px 1px;
+    z-index: 1000;
+}
+
+@media (max-width: 767px) {
+    .header {
+        position: static;
+    }
+}

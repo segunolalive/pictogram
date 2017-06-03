@@ -7,7 +7,7 @@ class Header extends Component {
     return (
       <header className='header'>
         <h1>
-          PICTOGRAM
+          Filter Rush
         </h1>
       </header>
     );

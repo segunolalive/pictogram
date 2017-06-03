@@ -39,11 +39,10 @@ class CanvasControls extends Component {
 }
 
 class CanvasContainer extends Component {
-  constructor () {
-    super();
-    this.state = {};
+  constructor (props) {
+    super(props);
+    this.state = { imageUrl: ''}
   }
-
   componentDidMount () {
     const ctx = this.canvas.getContext('2d');
     this.setState({ ctx });
