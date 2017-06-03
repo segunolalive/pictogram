@@ -36,8 +36,8 @@ class Wrapper extends Component {
 
   uploadImage = (e) => {
     const input = e.target;
-    if (input.files.length === 0) return;
     const type = input.files[0].type;
+    if (input.files.length === 0) return;
     if (!type.match(/image.*/)) {
       console.log('file is not a valid image', type);
       return;

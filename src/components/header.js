@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './header.css';
 
 
 const style = {
@@ -11,8 +10,9 @@ const style = {
   top: 0,
   margin: '0 0 1px',
   padding: '5px',
-  letterSpacing: '3px',
+  letterSpacing: '5px',
   boxShadow: '2px 3px 5px 1px rgba(0, 0, 0, 0.2)',
+  zIndex: 1000,
 }
 
 const toggleStyles = {
