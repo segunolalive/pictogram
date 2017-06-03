@@ -7,6 +7,8 @@ class ImageCanvas extends Component {
       <div>
         <canvas
           id='canvas'
+          width={600}
+          height={400}
           style={this.props.style}
           filters={this.props.filters}
           ref={this.props.canvas}
@@ -85,10 +87,12 @@ class CanvasContainer extends Component {
       if (image.height > canvas.height) {
             image.width *= canvas.height/image.height;
             image.height = canvas.height;
-            // canvas.width = image.width
           }
       if (canvas.width > image.width) {
         canvas.width = image.width;
+      }
+      if (image.width > canvas.width) {
+        image.width *= canvas.width/image.width;
       }
       ctx.clearRect(0, 0, canvas.width, canvas.height)
       ctx.drawImage(image, 0, 0, image.width, image.height);
