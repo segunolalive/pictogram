@@ -37,13 +37,19 @@ class Wrapper extends Component {
   uploadImage = (e) => {
     const input = e.target;
     if (input.files.length === 0) return;
+    const type = input.files[0].type;
+    if (!type.match.match(/image.*/)) {
+      console.log('file is not a valid image', type);
+      return;
+      // TODO: inform user that file is not a valid image
+    }
     var reader = new FileReader();
     reader.onload = (e) => {
       this.setState({
         dataUri: e.target.result,
         fileSrc: input.value,
         filename: input.files[0].name,
-        type: input.files[0].type,
+        type: type,
       })
     }
     reader.readAsDataURL(input.files[0]);
