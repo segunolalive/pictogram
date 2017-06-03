@@ -1,4 +1,4 @@
-body {
+html, body {
     box-sizing: border-box;
     font-size: 14px;
     background-color: #eee;
@@ -8,8 +8,12 @@ body {
 .wrapper {
     display: flex;
     justify-content: flex-start;
-    margin: 80px 0;
-
+    margin-top: 80px;
+}
+@media (max-width: 767px) {
+    .wrapper {
+        margin-bottom: 80px;
+    }
 }
 
 .sidebar {
@@ -17,7 +21,7 @@ body {
     color: white;
     background-color: #044f62;
     box-shadow: 0px 0px 10px #000;
-    overflow-x: scroll;
+
 }
 
 @media (max-width: 767px) {
@@ -27,6 +31,7 @@ body {
         left: 0;
         bottom: 0;
         display: inline-flex;
+        overflow-x: scroll;
     }
 }
 
