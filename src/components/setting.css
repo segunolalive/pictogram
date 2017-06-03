@@ -1,8 +1,9 @@
 .setting {
     color: '#ffffff';
     background-color: '#044f62';
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid #fff;
     padding: 10px 15px;
+    letter-spacing: 2.5px;
 }
 
 input {

@@ -1,3 +1,25 @@
 canvas {
-    background-color: #eee;
+    background-color: rgba(249, 249, 249, 0.5);
+    width: 100%;
+    margin: 20px 0;
+}
+
+.save {
+    display: inline-block;
+    padding: 10px 5px 5px;
+    background-color: #fff;
+    background-color: #044f62;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    height: 25px;
+    width: 80px;
+    text-align: center;
+    box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.save:hover {
+    color: #044f62;
+    background-color: #fff;
 }

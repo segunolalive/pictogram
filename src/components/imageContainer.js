@@ -6,8 +6,6 @@ class ImageCanvas extends Component {
     return (
       <div>
         <canvas
-          height={400}
-          width={400}
           id='canvas'
           style={this.props.style}
           filters={this.props.filters}
@@ -28,7 +26,7 @@ class CanvasControls extends Component {
           value={this.props.value}
           onChange={(e) => this.props.onChange(e)}
         />
-        <a
+        <a className='save'
           href={this.props.href}
           download={this.props.download}
           onClick={() => this.props.onClick()}
