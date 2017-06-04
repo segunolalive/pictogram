@@ -21,10 +21,12 @@ input {
 }
 
 .label-left {
+    min-width: 100px;
     text-align: left;
 }
 
 .label-right {
+    min-width: 100px;
     text-align: right;
 }
 
